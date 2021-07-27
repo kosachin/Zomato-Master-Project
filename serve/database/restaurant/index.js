@@ -19,6 +19,10 @@ const RestaurantSchema = new mongoose.Schema({
     reviews:[{type:mongoose.Types.ObjectId, ref:"Reviews"}],
     reviews:[{type:mongoose.Types.ObjectId, ref:"Images"}],
 
-})
+},
+{
+    timestamps: true,
+}
+)
 
 export const ResturantModel = mongoose.model("Resturant", ResturantSchema);

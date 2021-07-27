@@ -22,7 +22,8 @@ const UserSchema = new mongoose.Schema({
     phoneNumber: [{
         type: Number
     }],
+}, {
+    timestamps: true,
 })
 
-export const UserModel = mongoose.model("Users",UserSchema);
-
+export const UserModel = mongoose.model("Users", UserSchema);
