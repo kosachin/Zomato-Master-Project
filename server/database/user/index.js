@@ -17,10 +17,9 @@ const UserSchema = new mongoose.Schema(
 
 UserSchema.methods.generateJwtToken = function () {
     return jwt.sign({user: this._id.toString() }, "ZomatoAPP");
-
 }; 
 
-UserSchema.statics.findByEmailAndPhoneNumber = async ({email, phoneNumber }) => {
+UserSchema.statics.findByEmailAndPhone = async ({email, phoneNumber }) => {
     
     // Check whether email exist
     const checkUserByEmail = await UserModel.findOne({
@@ -59,7 +58,7 @@ UserSchema.pre("save", function (next) {
     const user = this;
     
     // Password is modfied?
-    if(user.isModified("password")) return next();
+    if(!user.isModified("password")) return next();
 
     // Generate bcrypt salt
     bcrypt.genSalt(8, (error, salt) => {
@@ -69,7 +68,7 @@ UserSchema.pre("save", function (next) {
         bcrypt.hash(user.password, salt, (error, hash) => {
             if(error) return next(error);
 
-            // Assigning hased password
+            // Assigning hashed password
             user.password = hash;
             return next();
         });
