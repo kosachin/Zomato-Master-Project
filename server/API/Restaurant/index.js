@@ -55,11 +55,12 @@ Router.get("/:_id", async (req, res) => {
 })
 
 /*
-Route     /
-Des       Get individual resturant detail based on id 
+Route     /search
+Des       Get restaurant details based on search string
 Params    none
+Body      searchSting  
 Access    Public
-Method    GET
+Method    GET  
 */
 Router.get("/search", async(req, res) => {
     try{
