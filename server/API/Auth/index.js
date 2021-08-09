@@ -3,9 +3,11 @@ import express from 'express';
 import bcrypt from "bcryptjs";
 import jwt from 'jsonwebtoken';
 import passport from 'passport';
+import mongoose from "mongoose";
+
 
 // Models
-import {UserModel} from "../../database/user";
+import {UserModel} from "../../database/allModels";
 
 const Router = express.Router();
 
