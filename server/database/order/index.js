@@ -1,4 +1,3 @@
-  
 import mongoose from "mongoose";
 
 const OrderSchema = new mongoose.Schema(
@@ -20,10 +19,10 @@ const OrderSchema = new mongoose.Schema(
         },
       },
     ],
-    orderRatings: {
-      type: Number,  
-      required: true,
-    },
+    // orderRatings: {
+    //   type: Number,  
+    //   required: true,
+    // },
   },
   {
     timestamps: true,
