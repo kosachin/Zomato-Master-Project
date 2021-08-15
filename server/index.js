@@ -15,6 +15,8 @@ import Auth from "./API/Auth";
 import Restaurant from "./API/Restaurant";
 import Food from "./API/Food";
 import Image from "./API/Image";
+import Order from "./API/Orders";
+import Reviews from "./API/Reviews";
 
 // DB connection
 import ConnectDB from "./database/connection";
@@ -37,6 +39,8 @@ zomato.use("/auth", Auth);
 zomato.use("/restaurant", Restaurant);
 zomato.use("/food", Food);
 zomato.use("/image", Image);
+zomato.use("/orders", Order);
+zomato.use("/reviews", Reviews);
 
 
 
