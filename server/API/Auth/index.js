@@ -8,8 +8,8 @@ import passport from 'passport';
 import {UserModel} from "../../database/allModels";
 
 // Validation
-import {ValidateSignup} from "../../validation/Auth";
-import {ValidateSignin} from "../../validation/Auth";
+import {ValidateSignup} from "../../validation/auth";
+import {ValidateSignin} from "../../validation/auth";
 
 const Router = express.Router();
 
