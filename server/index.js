@@ -17,6 +17,7 @@ import Food from "./API/Food";
 import Image from "./API/Image";
 import Order from "./API/Orders";
 import Reviews from "./API/Reviews";
+import User from "./API/User";
 
 // DB connection
 import ConnectDB from "./database/connection";
@@ -41,6 +42,7 @@ zomato.use("/food", Food);
 zomato.use("/image", Image);
 zomato.use("/orders", Order);
 zomato.use("/reviews", Reviews);
+zomato.use("/user", User);
 
 
 
