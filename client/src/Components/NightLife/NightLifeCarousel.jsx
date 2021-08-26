@@ -2,10 +2,10 @@ import React from "react";
 import Slider from "react-slick";
 
 // components
-import PictureCarouselCard from "../PictureCarousel";
+import PictureCarousalCard from "../PictureCarousel";
 import { NextArrow, PrevArrow } from "../CarouselArrow";
 
-const DiningCarousal = () => {
+const NightLifeCarousal = () => {
   const settings = {
     dots: true,
     infinite: false,
@@ -45,16 +45,16 @@ const DiningCarousal = () => {
   return (
     <div className="w-full">
       <Slider {...settings}>
-        <PictureCarouselCard />
-        <PictureCarouselCard />
-        <PictureCarouselCard />
-        <PictureCarouselCard />
-        <PictureCarouselCard />
-        <PictureCarouselCard />
-        <PictureCarouselCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
+        <PictureCarousalCard />
       </Slider>
     </div>
   );
 };
 
-export default DiningCarousal;
+export default NightLifeCarousal;

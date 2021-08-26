@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
 
-const PictureCarousalCard = () => {
+const PictureCarouselCard = () => {
   return (
     <>
       <div className="w-full h-64 relative px-4 overflow-hidden">
@@ -30,4 +30,4 @@ const PictureCarousalCard = () => {
   );
 };
 
-export default PictureCarousalCard;
+export default PictureCarouselCard;
