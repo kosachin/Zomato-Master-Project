@@ -7,7 +7,7 @@ import NutritionCard from "./NutritionCard";
 
 const Nutrition = () => {
   return (
-    <div>
+    <div className="mx-20">
       <NutritionHeroCarousel />
       <div className="my-6">
         <NutritionCarousel />

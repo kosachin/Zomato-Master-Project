@@ -54,7 +54,7 @@ const NutritionCarousel = () => {
         ))}
       </div>
 
-      <div className="hidden  lg:block">
+      <div className="hidden  lg:block px-auto">
         <Slider {...settings}>
           {categories.map((food) => (
             <NutritionCarouselCard {...food} />
